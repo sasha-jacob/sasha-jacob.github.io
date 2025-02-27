@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(229, 162, 217);
+  }
+  h1 {
+    color: rgb(175, 4, 169);
+    font-family: sans-serif;
+  }
+  p {
+    color: rgb(255, 255, 255);
+    font-family: geneva;
+  }
