@@ -9,3 +9,24 @@ body {
     color: rgb(255, 255, 255);
     font-family: geneva;
   }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  li a {
+    font-family: geneva;
+    display: block;
+    color: #d95bb3;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  li a:hover {
+    background-color: #b9a3e0;
+    color: white;
+  }
