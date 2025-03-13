@@ -1,8 +1,8 @@
 body {
-    background-color: rgb(229, 162, 217);
+    background-color: rgb(162, 192, 229);
   }
   h1 {
-    color: rgb(175, 4, 169);
+    color: rgb(67, 120, 163);
     font-family: sans-serif;
   }
   p {
@@ -13,20 +13,20 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 145px;
     background-color: #f1f1f1;
   }
   
   li a {
     font-family: geneva;
     display: block;
-    color: #d95bb3;
+    color: #5fa5eb;
     padding: 8px 16px;
     text-decoration: none;
     font-size: 12px;
   }
 
   li a:hover {
-    background-color: #b9a3e0;
+    background-color: #73a0cc;
     color: white;
   }
