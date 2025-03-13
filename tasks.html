@@ -13,6 +13,28 @@
     </ul>
 
     <p>Click the plus sign to add new task and the minus sign to delete a task. Click this button to create another list.</p>
+    <img src="Users/sashajacob/Downloads/readingDoraemon.png">
+    <button type="button" class="collapsibleList">Add To Your Tasks List +</button>
+    <div class="content">
+      <p>toggle list</p>  
+    </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsibleList");
+      var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } 
+    else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
 <img src="https://i.pinimg.com/736x/9b/fb/24/9bfb2401af914b9380429494a973e0cc.jpg" alt="ocean day">
 <img src="https://i.pinimg.com/736x/7b/a5/9e/7ba59e4a804dcbe820b0dc2f34479a4a.jpg" alt="yellow car">
 <img src="https://i.pinimg.com/736x/7d/9d/58/7d9d58455a3d269967a51154239d3d89.jpg" alt="mountain hike">
