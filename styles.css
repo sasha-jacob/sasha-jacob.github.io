@@ -1,15 +1,14 @@
 body {
-    background-color: rgb(162, 192, 229);
-    background-image: linear-gradient(to bottom right, rgb(157, 201, 215), white);
+    background-color: #eae7e1;
+    
   }
 
-@font-face {
-  font-family: ;
-  src: url();
-}
+
   h1 {
-    color: rgb(67, 120, 163);
-    font-family: sans-serif;
+    color: rgb(101, 136, 180);
+    font-family: Rubik Puddles;
+    text-align: center;
+    font-size: 50px;
   }
   p {
     color: rgb(255, 255, 255);
@@ -23,6 +22,7 @@ body {
     width: 145px;
     background-color: #f1f1f1;
     text-align: center;
+    
 
   }
   
@@ -39,6 +39,7 @@ body {
     background-color: #73a0cc;
     color: white;
   }
+  
 
   .collapsibleList {
     font-size: 17px;
