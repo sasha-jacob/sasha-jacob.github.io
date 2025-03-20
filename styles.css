@@ -18,13 +18,13 @@ body {
 
   @keyframes whoosh{
     0% {
-      transform: rotate(-1deg); /* Tilt left */
+      transform: rotate(-1deg); 
   }
   50% {
-      transform: rotate(1deg); /* Tilt right */
+      transform: rotate(1deg); 
   }
   100% {
-      transform: rotate(-1deg); /* Tilt left again */
+      transform: rotate(-1deg); 
   }
 }
 
@@ -58,7 +58,7 @@ body {
 
   p {
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 18px;
     font-family: poppins;
     text-align: center;
     padding: 10px;
@@ -73,16 +73,16 @@ body {
 
   .centerVideo {
     display: flex;
-    justify-content: center; /* Centers the video */
+    justify-content: center; 
     align-items: center;
-    width: 520px; /* Slightly larger than the video */
-    height: 420px; /* Adjusted for better fit */
+    width: 520px; 
+    height: 420px; 
     margin: auto;
   }
 
   .bordered-video {
-    width: 540px; /* Match video width */
-    height: 390px; /* Match video height */
+    width: 540px; 
+    height: 390px;
     border: 15px solid #46634e;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -221,7 +221,7 @@ h2{
 .cloud2 {
   position: absolute;
   top: 20%;
-  left: -150px; /* Start off-screen */
+  left: -150px; 
   width: 150px;
   height: 100px;
   background: #fff;
@@ -234,7 +234,7 @@ h2{
 .cloud3 {
   position: absolute;
   top: 50%;
-  left: -150px; /* Start off-screen */
+  left: -150px; 
   width: 160px;
   height: 100px;
   background: #fff;
@@ -247,7 +247,7 @@ h2{
 .cloud4 {
   position: absolute;
   top: 80%;
-  left: -150px; /* Start off-screen */
+  left: -150px; 
   width: 160px;
   height: 100px;
   background: #fff;
@@ -260,7 +260,7 @@ h2{
 .cloud5 {
   position: absolute;
   top: 95%;
-  left: -150px; /* Start off-screen */
+  left: -150px; 
   width: 160px;
   height: 100px;
   background: #fff;
