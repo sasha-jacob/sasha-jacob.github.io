@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   
@@ -21,7 +22,7 @@
 <h1>Welcome To The Study Room</h1>
 
 <div class="hero">
-  <h1>New Month Count</h1>
+  <h2>New Month Count</h2>
   <div class="timebox">
       <div class="time">
           <h2 id="days">20</h2>
@@ -42,7 +43,38 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js">
+  const Days = document.getElementById('days');
+const Hours = document.getElementById('hours');
+const Minutes = document.getElementById('minutes');
+const Seconds = document.getElementById('seconds');
+
+const targetDate = new Date("November 1 2024 00:00:00").getTime();
+
+function timer () {
+    const currentDate = new Date().getTime();
+    const distance = targetDate - currentDate;
+
+    const days = Math.floor(distance / 1000 / 60 / 60 / 24);
+    const hours = Math.floor(distance / 1000 / 60 / 60) % 24;
+    const minutes = Math.floor(distance / 1000 / 60) % 60;
+    const seconds = Math.floor(distance / 1000) % 60;
+
+    Days.innerHTML = days;
+    Hours.innerHTML = hours;
+    Minutes.innerHTML = minutes;
+    Seconds.innerHTML = seconds;
+
+    if(distance < 0){
+        Days.innerHTML = "00";
+        Hours.innerHTML = "00";
+        Minutes.innerHTML = "00";
+        Seconds.innerHTML = "00";
+    }
+}
+
+setInterval(timer, 1000);
+</script>
 
 
 </body>
