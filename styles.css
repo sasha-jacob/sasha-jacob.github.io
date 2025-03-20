@@ -1,20 +1,55 @@
 body {
-    background-color: #eae7e1;
+    background-color: #80a272;
     
   }
 
 
   h1 {
-    color: rgb(101, 136, 180);
+    color: rgb(15, 65, 20);
     font-family: Rubik Puddles;
     text-align: center;
     font-size: 50px;
+    animation-name: whoosh;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    position: relative;
   }
+
+  @keyframes whoosh{
+    0% {
+      transform: rotate(-1deg); /* Tilt left */
+  }
+  50% {
+      transform: rotate(1deg); /* Tilt right */
+  }
+  100% {
+      transform: rotate(-1deg); /* Tilt left again */
+  }
+
+  }
+
   p {
     color: rgb(255, 255, 255);
     font-size: 13px;
     font-family: geneva;
+    text-align: center;
   }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .rectangle {
+    height: 22%;
+    width: 100%;
+    background-color: #555;
+    position: absolute; 
+    bottom: 0;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -63,9 +98,57 @@ body {
   .content{
     padding: 0 6px;
     outline: none;
-    text-align: left;
+    text-align: center;
     margin: center;
     display: none;
     overflow: hidden;
     background-color: #82a3d7;
   }
+
+  .navBar{
+    border: 5px outset rgb(0, 255, 68);
+    background-color: rgb(145, 207, 227);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+/* JS timer */
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.timebox{
+    display: flex;
+    gap: 90px;
+}
+
+.time{
+    text-align: center;
+}
+
+.time h2{
+    font-size: 5rem;
+    font-weight: 100;
+}
+/* JS timer */
