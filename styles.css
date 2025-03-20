@@ -25,13 +25,40 @@ body {
   100% {
       transform: rotate(-1deg); /* Tilt left again */
   }
+}
+
+  .relaxWhoosh{
+
+    color: rgb(255, 255, 255);
+    font-family: Rubik Puddles;
+    text-align: center;
+    font-size: 40px;
+    animation-name: whooshTwo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+
 
   }
+
+  @keyframes whooshTwo{
+    0% {
+      left:0px; top:0px;
+    }
+    50% {
+     right:0px; top:0px;
+      
+    }
+    100% {
+      left:0px; top:0px;
+    }
+  }
+
 
   p {
     color: rgb(255, 255, 255);
     font-size: 13px;
-    font-family: geneva;
+    font-family: po;
     text-align: center;
   }
 
@@ -52,27 +79,30 @@ body {
 
   ul {
     list-style-type: none;
+    display: inline;
     margin: 0;
     padding: 0;
     width: 145px;
-    background-color: #f1f1f1;
+    background-color: #9e8585;
     text-align: center;
     
 
   }
   
   li a {
-    font-family: geneva;
+    font-family: poppins;
+    float: left;
     display: block;
-    color: #5fa5eb;
-    padding: 8px 16px;
+    background-color: #318d48;
+    color: #99d27d;
+    padding: 8px 20px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 18px;
   }
 
   li a:hover {
-    background-color: #73a0cc;
-    color: white;
+    background-color: #246835;
+    color: #99d27d;
   }
   
 
