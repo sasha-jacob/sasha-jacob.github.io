@@ -1,6 +1,5 @@
 body {
     background-color: #f7fff7;
-    
   }
 
 
@@ -115,6 +114,31 @@ body {
     background-color: #318d48;
     text-align: center;
 
+  }
+
+  .container{
+    margin: 40px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ibarra Real Nova', bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: #D2C34F;
+    background-color: #F2E9AB;
+  }
+
+  .timer{
+    color: #D2C34F;
+  }
+
+  .button-wrapper{
+    display: flex;
+    font-weight: 700;
+    
   }
   
 

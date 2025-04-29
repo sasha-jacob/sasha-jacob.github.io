@@ -20,63 +20,26 @@
 </li>
 </ul>
 
-<h1>Welcome To The Study Room</h1>
+<div class="container">
+  <h1 class="title">Pomodoro Timer</h1>
 
-<div class="hero">
-  <h2>New Month Count</h2>
-  <div class="timebox">
-      <div class="time">
-          <h2 id="days">20</h2>
-          <p>Days</p>
-      </div>
-      <div class="time">
-          <h2 id="hours">10</h2>
-          <p>Hours</p>
-      </div>
-      <div class="time">
-          <h2 id="minutes">15</h2>
-          <p>Minutes</p>
-      </div>
-      <div class="time">
-          <h2 id="seconds">05</h2>
-          <p>Seconds</p>
-      </div>
+  <hr>
+
+  <p class="timer" id="timer">25:00</p>
+  
+  <div class="button-wrapper">
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <button id="reset">reset</button>
+    <button id="longStudy">25 minutes</button>
+    <button id="shortBreak">short break</button>
+    <button id="longBReak">long break</button>
+
   </div>
+
 </div>
 
-<!-- JS for timer, Credit: HTML Camp https://www.youtube.com/watch?v=34kbdFLpff8 -->
-<script src="script.js">
-  const Days = document.getElementById('days');
-const Hours = document.getElementById('hours');
-const Minutes = document.getElementById('minutes');
-const Seconds = document.getElementById('seconds');
-
-const targetDate = new Date("November 1 2024 00:00:00").getTime();
-
-function timer () {
-    const currentDate = new Date().getTime();
-    const distance = targetDate - currentDate;
-
-    const days = Math.floor(distance / 1000 / 60 / 60 / 24);
-    const hours = Math.floor(distance / 1000 / 60 / 60) % 24;
-    const minutes = Math.floor(distance / 1000 / 60) % 60;
-    const seconds = Math.floor(distance / 1000) % 60;
-
-    Days.innerHTML = days;
-    Hours.innerHTML = hours;
-    Minutes.innerHTML = minutes;
-    Seconds.innerHTML = seconds;
-
-    if(distance < 0){
-        Days.innerHTML = "00";
-        Hours.innerHTML = "00";
-        Minutes.innerHTML = "00";
-        Seconds.innerHTML = "00";
-    }
-}
-
-setInterval(timer, 1000);
-</script>
+  <script src="script.js"></script>
 
 </body>
 </html>
