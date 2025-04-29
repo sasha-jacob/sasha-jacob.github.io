@@ -1,19 +1,29 @@
 body {
-    background-color: #80a272;
+    background-color: #f7fff7;
     
   }
 
 
-  h1 {
-    color: rgb(15, 65, 20);
-    font-family: Rubik Puddles;
-    text-align: center;
-    font-size: 50px;
+  h3 {
+    color: #5281BD;
+    font-family: 'Ibarra Real Nova', bold;
+    text-align: left;
+    font-weight: 100px;
     padding: 10px;
     animation-name: whoosh;
-    animation-duration: 1.5s;
+    animation-duration: 8.0s;
     animation-iteration-count: infinite;
     position: relative;
+  }
+
+  li a {
+    font-family: 'Ibarra Real Nova', bold;
+    font-weight: 100px;
+    text-decoration: none;
+    background-color: #f7fff7;
+    color: #5281BD;
+    float: left;
+    padding: 8px 20px;
   }
 
   @keyframes whoosh{
@@ -71,6 +81,14 @@ body {
     width: 50%;
   }
 
+  .floor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 50%;
+  }
+
   .centerVideo {
     display: flex;
     justify-content: center; 
@@ -107,15 +125,6 @@ body {
 
   }
   
-  li a {
-    font-family: poppins;
-    float: left;
-    background-color: #318d48;
-    color: #99d27d;
-    padding: 8px 20px;
-    text-decoration: none;
-    font-size: 18px;
-  }
 
   li a:hover {
     background-color: #246835;
