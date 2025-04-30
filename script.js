@@ -3,7 +3,7 @@ const stop = document.getElementById("stop");
 const reset = document.getElementById("reset");
 const timer = document.getElementById("timer");
 
-let timeleft = 1500; //25mintimes60
+let timeLeft = 1500; //25mintimes60
 let interval;
 const updateTimer = () => {
     const minutes = Math.floor(timeLeft/60);
@@ -27,7 +27,10 @@ const startTimer = () => {
     }, 1000);
 }
 
-const stopTimer = () => clearInterval(interval);
+const stopTimer = () => {
+    clearInterval(interval);
+    interval = null;
+};
 
 const resetTimer = () => {
     clearInterval(interval);
