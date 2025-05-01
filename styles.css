@@ -5,10 +5,13 @@ body {
 
   h3 {
     color: #5281BD;
-    font-family: 'Ibarra Real Nova', bold;
+    font-family: 'Ibarra Real Nova';
     text-align: left;
+    font-size: 25px;
     font-weight: 100px;
-    padding: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 40px ;
     animation-name: whoosh;
     animation-duration: 8.0s;
     animation-iteration-count: infinite;
@@ -23,14 +26,19 @@ body {
   }
 
   li a {
-    font-family: 'Ibarra Real Nova', bold;
-    font-weight: 100px;
+    font-family: 'Ibarra Real Nova';
+    font-size: 25px;
+    font-weight: 700;
     text-decoration: none;
     background-color: #f7fff7;
     color: #5281BD;
     float: left;
-    padding: 8px 20px;
+    padding: 20px 20px;
+    padding-left: 25px;
+    padding-right: 40px;
   }
+
+  
 
   @keyframes whoosh{
     0% {
@@ -118,7 +126,7 @@ body {
     padding: 0;
     width: 100%;
     display: flex;
-    background-color: #318d48;
+    background-color: ##f7fff7;
     text-align: center;
 
   }
@@ -136,7 +144,7 @@ body {
     gap: 2em;
     color: #D2C34F;
     background-color: #F2E9AB;
-    border-radius: 0.5em;
+    border-radius: 1.5em;
     
   }
 
@@ -151,6 +159,7 @@ body {
   button{
     font-family: 'Instrument Sans', bold;
     font-weight: 600;
+    font-size: 22px;
     border-radius: 0.5em;
     border: none;
     padding: 0.7em 1.5em;
@@ -158,53 +167,31 @@ body {
   }
 
   #start {
-    background-color: #5281BD; /* green */
+    background-color: #5281BD; 
+    opacity: 90%;
     color: white;
   }
   
   #stop {
-    background-color: #5281BD; /* red */
+    background-color: #5281BD; 
+    opacity: 90%;
     color: white;
   }
   
   #reset {
-    background-color: #5281BD; /* blue */
+    background-color: #5281BD; 
+    opacity: 90%;
     color: white;
   }
 
   .button-wrapper{
     display: flex;
-    font-family: ;
     color: #82a3d7;
+    gap: 25px;
     
   }  
-
-  li a:hover {
-    background-color: #246835;
-    color: #99d27d;
-  }
   
 
-  .collapsibleList {
-    font-size: 26px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: aliceblue;
-    padding: 6px;
-    border: none;
-    color: rgb(34, 155, 196);
-    border-radius: 4px;
-    font-family: poppins;
-    text-align: center;
-    margin: auto;
-    width: 40%;
-    padding: 18px;
-    display: flex;
-    
-  }
-
-  .active, .collapsibleList:hover {
-    background-color: aliceblue;
-  }
 
 
   .content{
@@ -224,22 +211,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
   }
-
-.hero{
-    height: 100vh;
-    background-image: linear-gradient(rgba(126, 217, 229, 0.5), 
-    rgba(17, 117, 85, 0.5)), url(background.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 200px;
-    color: #fff;
-}
 
 h1{
     font-size: 4rem;
@@ -346,44 +318,64 @@ h2{
 .task-page {
   display: flex;
   justify-content: space-around;
-  padding: 40px;
+  padding-top: 2%;
+  padding-left: 1%;
   background-color: #f7fff7;
-  font-family: 'Poppins', sans-serif;
 }
 
-.task-input, .task-list {
+.task-input {
   width: 40%;
+  height: 200px;
   background-color: #F2E9AB;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
+.task-list {
+  width: 35%;
+  height: 720px;
+  background-color: #5281BD;
+  opacity: 70%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  margin-top: -60px;
+}
+
 .task-input h2, .task-list h2 {
-  color: #246835;
+  color: #ffffff;
+  font-family: 'Ibarra Real Nova';
+  text-align: center;
+}
+
+.task-list h2 {
+  text-align: center;
+  margin-bottom: 20px; 
 }
 
 #taskInput {
   width: 100%;
   padding: 10px;
+  font-family: 'Ibarra Real Nova';
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px dotted #5281BD;
 }
 
 button {
   padding: 10px 16px;
-  background-color: #318d48;
+  background-color: #82a3d7;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Ibarra Real Nova';
 }
 
 button:hover {
-  background-color: #246835;
+  background-color: #e5a9d1;
 }
 
 #taskList {
@@ -392,7 +384,7 @@ button:hover {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 12px;
   max-height: 400px; /* Optional: limit height */
   overflow-y: auto;   /* Optional: make scrollable */
 }
@@ -403,7 +395,73 @@ button:hover {
   align-items: center;
   word-break: break-word;
   padding: 10px;
+  padding-top: 10px;
   background-color: #ffffff;
-  border-left: 5px solid #82a3d7;
+  border-left: 5px solid #50c252;
   border-radius: 6px;
 }
+
+
+/* room space css */
+.study-room {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f7fff7; /* optional cozy background */
+  overflow: hidden;
+}
+
+.window-center {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carpet-link {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coffee-table-link {
+  position: absolute;
+  top: 43%;
+  right: 8%;
+}
+
+.lounge-chair-link {
+  position: absolute;
+  top: -12%;
+  left: 2%;
+}
+
+.window-center img {
+  width: 720px;
+  height: 450px;
+}
+
+.carpet-link img {
+  width: 900px;
+}
+
+.coffee-table-link img {
+  width: 400px;
+}
+
+.lounge-chair-link img {
+  width: 650px;
+}
+
+.lamp-link {
+  position: absolute; /* necessary to place it over other elements */
+  top: -20%;
+  left: 41%;
+  z-index: 5; /* higher than the others */
+}
+
+.lamp-link img {
+  width: 250px;
+}
+

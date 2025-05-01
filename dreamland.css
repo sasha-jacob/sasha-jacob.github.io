@@ -3,21 +3,25 @@ body {
   }
 
 li a {
-    font-family: 'Ibarra Real Nova', bold;
-    font-weight: 100px;
+    font-family: 'Ibarra Real Nova';
+    font-size: 25px;
+    font-weight: 700;
     text-decoration: none;
     background-color: #f7fff7;
     color: #D4ADCF;
     float: left;
     padding: 8px 20px;
+    border-radius: 1.5em;
   }
 
   h1{
-    font-family: 'Ibarra Real Nova', bold;
+    font-family: 'Jersey 10';
+    font-size: 50px;
     color: #653B81;
     animation-name: whoosh;
     animation-duration: 8.0s;
     animation-iteration-count: infinite;
+    text-align: center;
 
   }
 
@@ -62,44 +66,47 @@ li a {
   }
 
   .mediaContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 40px;
-    padding: 20px;
-  }
-  
-  .musicPlayer {
-    background-color: #f7fff7;
-    border: 3px solid #653B81;
-    border-radius: 15px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    font-family: 'Ibarra Real Nova', serif;
-  }
-  
-  .musicPlayer h2 {
-    color: #653B81;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .musicPlayer button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-family: 'Ibarra Real Nova', serif;
-    font-size: 16px;
-    background-color: #D4ADCF;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .musicPlayer button:hover {
-    background-color: #a87eab;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.musicPlayer {
+  background-color: #f7fff7;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+.musicPlayer h2 {
+  font-family: 'Jersey 10';
+  font-size: 40px;
+  color: #653B81;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.musicPlayer button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: 'Jersey 10';
+  font-size: 20px;
+  background-color: #D4ADCF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.musicPlayer button:hover {
+  background-color: #a87eab;
+}
+

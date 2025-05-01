@@ -8,6 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -36,31 +43,40 @@
   </div>
 
 <div class="musicPlayer">
-  <h2>Relaxing Sounds</h2>
-  <button onclick="playSound('audio1')">Rain</button>
-  <button onclick="playSound('audio2')">Waves</button>
-  <button onclick="playSound('audio3')">Chimes</button>
-  <button onclick="playSound('audio4')">Forest</button>
+  <h2>Music Player select a song!</h2>
+  <button onclick="playSound('audio1')">AUDIO 1</button>
+  <button onclick="playSound('audio2')">AUDIO 2</button>
+  <button onclick="playSound('audio3')">AUDIO 3</button>
+  <button onclick="playSound('audio4')">AUDIO 4</button>
 
-  <audio id="audio1" src="sounds/rain.mp3"></audio>
-  <audio id="audio2" src="sounds/waves.mp3"></audio>
-  <audio id="audio3" src="sounds/chimes.mp3"></audio>
-  <audio id="audio4" src="sounds/forest.mp3"></audio>
+  <audio id="audio1" src="sounds/lofi1.mp3"></audio>
+  <audio id="audio2" src="sounds/lofi2.mp3"></audio>
+  <audio id="audio3" src="sounds/lofi3.mp3"></audio>
+  <audio id="audio4" src="sounds/lofi4.mp3"></audio>
 </div>
 </div>
 
 <script>
-function playSound(id) {
-  // Pause all other audios
-  const audios = document.querySelectorAll('audio');
-  audios.forEach(audio => {
-    audio.pause();
-    audio.currentTime = 0;
-  });
+let currentlyPlaying = null;
 
-  // Play selected audio
+function playSound(id) {
   const selectedAudio = document.getElementById(id);
-  selectedAudio.play();
+
+  // If the same audio is clicked again, pause it
+  if (currentlyPlaying === selectedAudio && !selectedAudio.paused) {
+    selectedAudio.pause();
+    currentlyPlaying = null;
+  } else {
+    // Pause any currently playing audio
+    if (currentlyPlaying && !currentlyPlaying.paused) {
+      currentlyPlaying.pause();
+      currentlyPlaying.currentTime = 0;
+    }
+
+    // Play the selected audio
+    selectedAudio.play();
+    currentlyPlaying = selectedAudio;
+  }
 }
 </script>
 
