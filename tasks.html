@@ -16,25 +16,20 @@
       <li><a href="dreamland.html">dreamland</a></li>
     </ul>
     
-    <h1>Create New Tasks</h1>
-
-    <p>Click to view a desired To Do List and add or delete a new task!</p>
+    <div class="task-page">
+      <div class="task-input">
+        <h2>Add a New Task</h2>
+        <input type="text" id="taskInput" placeholder="Write your task..." />
+        <button onclick="addTask()">Add Task</button>
+      </div>
     
-
-    <button type="button" class="collapsibleList">School To Do List +</button>
-    <div class="content">
-      <p>Complete coding assignment</p> 
-    </div>
-
-    <button type="button" class="collapsibleList">Personal To Do List +</button>
-    <div class="content">
-      <p>Do laundry and wash dishes</p> 
+      <div class="task-list">
+        <h2>to do list</h2>
+        <ul id="taskList"></ul>
+      </div>
     </div>
     
-    <button type="button" class="collapsibleList">Internship To Do List +</button>
-    <div class="content">
-      <p>Revise resume and update LinkedIn</p> 
-    </div>
+    <script src="task.js"></script>
 
    <!--JS for creating a toggle and collapsible list, Credit: W3 Schools, https://www.w3schools.com/howto/howto_js_collapsible.asp-->
     <script>

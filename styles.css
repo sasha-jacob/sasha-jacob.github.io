@@ -15,6 +15,13 @@ body {
     position: relative;
   }
 
+  .title {
+    font-family: 'Ibarra Real Nova', bold;
+    font-weight: 600;
+    color: #D2C34F;
+    padding-top: 20px;
+  }
+
   li a {
     font-family: 'Ibarra Real Nova', bold;
     font-weight: 100px;
@@ -84,7 +91,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
+    margin-bottom: 50px;
     width: 50%;
   }
 
@@ -117,8 +124,8 @@ body {
   }
 
   .container{
-    margin: 40px;
-    padding: 0;
+    margin: 80px;
+    padding: 40px;
     box-sizing: border-box;
     font-family: 'Ibarra Real Nova', bold;
 
@@ -129,17 +136,40 @@ body {
     gap: 2em;
     color: #D2C34F;
     background-color: #F2E9AB;
+    border-radius: 0.5em;
+    
   }
 
   .timer{
     color: #D2C34F;
+    font-size: 90px;
+    font-family: 'Ibarra Real Nova', bold;
+    font-weight: 600;
+    padding-bottom: 40px;
   }
 
   button{
-    font-family: 'Ibarra Real Nova', bold;
-    border-radius: 0.5 em;
-    padding: 0.5em 1.5em;
+    font-family: 'Instrument Sans', bold;
+    font-weight: 600;
+    border-radius: 0.5em;
+    border: none;
+    padding: 0.7em 1.5em;
     box-shadow: 2px 2px 2px rgba(184, 176, 176, 0.9);
+  }
+
+  #start {
+    background-color: #5281BD; /* green */
+    color: white;
+  }
+  
+  #stop {
+    background-color: #5281BD; /* red */
+    color: white;
+  }
+  
+  #reset {
+    background-color: #5281BD; /* blue */
+    color: white;
   }
 
   .button-wrapper{
@@ -309,4 +339,72 @@ h2{
   to {
       left: 100%;
   }
+}
+
+/* this is my task page css */
+
+.task-page {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: #f7fff7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.task-input, .task-list {
+  width: 40%;
+  background-color: #F2E9AB;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.task-input h2, .task-list h2 {
+  color: #246835;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #318d48;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background-color: #246835;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 400px; /* Optional: limit height */
+  overflow-y: auto;   /* Optional: make scrollable */
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-word;
+  padding: 10px;
+  background-color: #ffffff;
+  border-left: 5px solid #82a3d7;
+  border-radius: 6px;
+}
 }
