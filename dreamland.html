@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dreamland.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -23,20 +24,45 @@
 </ul>
 
 <div class= "relaxWhoosh">
-  <h1>Glad You're Here, Let's Relax and Recharge! </h1>
+  <h1>glad you're here, let's relax and recharge! </h1>
 </div>
 
-<div class= "centerVideo">
-  <video class="bordered-video" controls>
-    <source src="images/meditation.mp4" type="video/mp4">
-  </video>
+<div class="mediaContainer">
+  <!-- Video on the left -->
+  <div class="centerVideo">
+    <video class="bordered-video" controls>
+      <source src="images/meditation.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<div class="musicPlayer">
+  <h2>Relaxing Sounds</h2>
+  <button onclick="playSound('audio1')">Rain</button>
+  <button onclick="playSound('audio2')">Waves</button>
+  <button onclick="playSound('audio3')">Chimes</button>
+  <button onclick="playSound('audio4')">Forest</button>
+
+  <audio id="audio1" src="sounds/rain.mp3"></audio>
+  <audio id="audio2" src="sounds/waves.mp3"></audio>
+  <audio id="audio3" src="sounds/chimes.mp3"></audio>
+  <audio id="audio4" src="sounds/forest.mp3"></audio>
+</div>
 </div>
 
-<div class="cloud cloud1"></div>
-<div class="cloud cloud2"></div>
-<div class="cloud cloud3"></div>
-<div class="cloud cloud4"></div>
-<div class="cloud cloud5"></div>
+<script>
+function playSound(id) {
+  // Pause all other audios
+  const audios = document.querySelectorAll('audio');
+  audios.forEach(audio => {
+    audio.pause();
+    audio.currentTime = 0;
+  });
+
+  // Play selected audio
+  const selectedAudio = document.getElementById(id);
+  selectedAudio.play();
+}
+</script>
 
 
 </body>

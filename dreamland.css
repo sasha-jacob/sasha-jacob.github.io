@@ -1,0 +1,105 @@
+body {
+    background-color: #D4ADCF;
+  }
+
+li a {
+    font-family: 'Ibarra Real Nova', bold;
+    font-weight: 100px;
+    text-decoration: none;
+    background-color: #f7fff7;
+    color: #D4ADCF;
+    float: left;
+    padding: 8px 20px;
+  }
+
+  h1{
+    font-family: 'Ibarra Real Nova', bold;
+    color: #653B81;
+    animation-name: whoosh;
+    animation-duration: 8.0s;
+    animation-iteration-count: infinite;
+
+  }
+
+  @keyframes whoosh{
+    0% {
+      transform: rotate(-1deg); 
+  }
+  50% {
+      transform: rotate(1deg); 
+  }
+  100% {
+      transform: rotate(-1deg); 
+  }
+}
+
+  .centerVideo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 520px; 
+    height: 420px; 
+    margin: auto;
+  }
+
+  .bordered-video {
+    width: 540px; 
+    height: 390px;
+    border: 5px solid #653B81;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    background-color: #D4ADCF;
+    text-align: center;
+
+  }
+
+  .mediaContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .musicPlayer {
+    background-color: #f7fff7;
+    border: 3px solid #653B81;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Ibarra Real Nova', serif;
+  }
+  
+  .musicPlayer h2 {
+    color: #653B81;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .musicPlayer button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 16px;
+    background-color: #D4ADCF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .musicPlayer button:hover {
+    background-color: #a87eab;
+  }
